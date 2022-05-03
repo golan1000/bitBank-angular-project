@@ -1,0 +1,51 @@
+@import "../../../styles.scss";
+.transfer-main-con {
+  color: black;
+  width: 100%;
+  // background-color: var(--app-bgcolor);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.transfer-con {
+  border: 1px solid black;
+  border-radius: 10px;
+  * {
+    padding: 15px;
+  }
+  margin: 0 auto;
+  background-color: #ffa400;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  button {
+    @include button1-style;
+  }
+  .transfer-btn:hover {
+    background-color: green !important;
+  }
+  input {
+    @include input-style;
+    width: 80px;
+  }
+  .transfer-con-title {
+    font-size: 24px;
+  }
+  .transfer-con-amount {
+    margin: 0 auto;
+    // text-align: left;
+  }
+  .transfer-con-btn {
+  }
+}
+
+.user-alert-msg {
+  font-size: 14px;
+  color: red;
+  margin: 0 auto;
+}
+.user-accept-msg {
+  font-size: 14px;
+  color: green;
+  margin: 0 auto;
+}

@@ -1,0 +1,9 @@
+@import "../../../styles.scss";
+.contact-filter-main-con {
+  input {
+    @include input-style;
+  }
+  button {
+    @include button1-style;
+  }
+}

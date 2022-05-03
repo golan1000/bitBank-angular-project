@@ -1,0 +1,27 @@
+<section class="preview-main-con btn" (mouseenter)="isEditRemoveConShown=true"
+    (mouseleave)="isEditRemoveConShown=false">
+    <a [routerLink]="['../details/',contactData._id]" class="navlink">
+        <div class="preview-con">
+            <div *ngIf="isEditRemoveConShown" class="preview-edit-remove-con">
+                <div class="preview-remove-btn" title="remove contact" (click)="emitSelected()"><img
+                        src="https://res.cloudinary.com/flat-inn/image/upload/v1651569149/assets/bitBank/remove_e47fse.png" />
+
+                </div>
+                <div class="preview-edit-btn" title="edit contact" class="details-edit-btn" title="edit contact">
+                    <a [routerLink]="['../edit/',contactData._id]" class=""><img
+                            src="https://res.cloudinary.com/flat-inn/image/upload/v1651569148/assets/bitBank/edit_mdnvgx.png" /></a>
+                </div>
+
+            </div>
+            <div class="preview-name">
+                {{contactData.name}}
+            </div>
+            <div class="preview-pic-con">
+                <img [src]="contactData.picture" />
+            </div>
+
+
+        </div>
+    </a>
+    <!-- {{contactData|json}} -->
+</section>

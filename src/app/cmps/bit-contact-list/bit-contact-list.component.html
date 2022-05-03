@@ -1,0 +1,6 @@
+<section class="contact-list-main-con">
+    <div *ngIf="contacts" class="contact-list-con">
+        <app-bit-preview *ngFor="let currContact of contacts" (onSelect)="emitSelected($event)"
+            [contactData]="currContact"></app-bit-preview>
+    </div>
+</section>

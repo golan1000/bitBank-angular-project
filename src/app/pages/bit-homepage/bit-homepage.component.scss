@@ -1,0 +1,85 @@
+@import "../../../styles.scss";
+.homepage-main {
+  color: white;
+  padding-top: var(--padding-top);
+  background-color: var(--app-bgcolor);
+  width: 100%;
+  height: 100%;
+}
+
+.main-form {
+  font-size: 24px;
+  text-align: left;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 400px;
+  max-height: 400px;
+  // background-color: lightblue;
+  .bitcoin-coin {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    // background-color: green;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  input {
+    @include input-style;
+  }
+  button {
+    @include button1-style;
+  }
+  .login-btn:hover {
+    background-color: green !important;
+  }
+  .welcome-register {
+    width: 200px;
+    // height: 200px;
+    margin: 0 auto;
+    // background-color: green;
+    input {
+      width: 100%;
+    }
+    button {
+      margin-top: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  .welcome-user {
+    .welcome-title {
+      margin-bottom: 20px;
+      font-size: 35px;
+      text-align: center;
+      //   background-color: green;
+    }
+    .welcome-username {
+      color: yellow;
+      // background-color: rgba(0, 0, 0, 0.8);
+    }
+    .bitcoin-rate-con {
+      .bitcoin-rate-price {
+        color: white;
+      }
+    }
+    .logout-con {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}
+.bitcoin-coins {
+  margin-top: 10px;
+}
+.bitcoin-rate-con {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-title {
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
